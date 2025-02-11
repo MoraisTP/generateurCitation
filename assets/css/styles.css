@@ -5,7 +5,8 @@
     font-family: Arial, sans-serif;
 }
 
-body, html {
+.bodyConnexion {
+    margin-top: 50px;
     height: 100%;
     width: 100%;
     display: flex;
