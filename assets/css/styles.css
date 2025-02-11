@@ -4,17 +4,10 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-.bodyConnexion {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../img/raidenbg.jpg");
-    color: #fff;
-}
+
 
 .bodyInscription {
+    margin-top: 50px;
     height: 100%;
     width: 100%;
     display: flex;
