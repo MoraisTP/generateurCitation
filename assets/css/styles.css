@@ -160,19 +160,9 @@ input[type="password"] {
     border-bottom: 1px solid #ccc;
 }
 
-.divider:not(:empty)::before {
-    margin-right: .25em;
-}
 
-.divider:not(:empty)::after {
-    margin-left: .25em;
-}
 
-.social-login {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
+
 
 @media (max-width: 768px) {
     .container {
