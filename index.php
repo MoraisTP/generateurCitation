@@ -43,6 +43,8 @@
         <button id="generer-btn">GÉNÉRER</button>
         <div id="citation"></div>
     </div>
+    <button id="favori-btn" data-citation-id="">💜 Ajouter aux favoris</button>
+
 </main>
 
 <script src="./assets/js/random.js"></script>
