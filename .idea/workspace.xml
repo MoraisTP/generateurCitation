@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1bdf616-e97f-4d53-8509-f50bf563aec2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/js/popupInscription.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/connection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/deconnecter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/sInscrire.php" afterDir="false" />
+    <list default="true" id="a1bdf616-e97f-4d53-8509-f50bf563aec2" name="Changes" comment="feat : ajout de la feature inscription, il est maitenant possible de s'inscrire sur le site.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/connection.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +78,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="Push.Settings">
+    <force-push-targets>
+      <force-push-target remote-path="origin" branch="inscription" />
+    </force-push-targets>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -113,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739284793888</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat : ajout de la feature inscription, il est maitenant possible de s'inscrire sur le site.">
+      <option name="closed" value="true" />
+      <created>1739301657704</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739301657704</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +129,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ADD : Page connexion.html (FRONT) est prête." />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="feat : ajout de la feature inscription, il est maitenant possible de s'inscrire sur le site." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : ajout de la feature inscription, il est maitenant possible de s'inscrire sur le site." />
   </component>
 </project>
