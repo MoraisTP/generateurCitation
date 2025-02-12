@@ -1,18 +1,22 @@
 <?php
-header("Content-Type: application/json");
 session_start();
-require "config.php";
+require 'config.php';
 
 if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
-    echo json_encode(["status" => "error"]);
-    exit();
+    die("Accès refusé.");
 }
 
-$data = json_decode(file_get_contents("php://input"), true);
-$citation_id = $data['citation_id'];
+$citation_id = $_POST['citations_id'];
 
-$stmt = $pdo->prepare("DELETE FROM citations WHERE id = ?");
+$stmt = $pdo->prepare("SELECT COUNT(*) FROM favoris WHERE citations_id = ?");
 $stmt->execute([$citation_id]);
+$est_favori = $stmt->fetchColumn();
 
-echo json_encode(["status" => "deleted"]);
+if ($est_favori == 0) {
+    $stmt = $pdo->prepare("DELETE FROM citations WHERE id = ?");
+    $stmt->execute([$citation_id]);
+    echo "<script>alert('Supprimer avec succèes');</script>";
+}
+
+header("Refresh: 3 ; Location: admin.php");
 ?>

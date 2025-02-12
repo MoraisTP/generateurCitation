@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $pseudo = trim($_POST["pseudo"]);
     $password = $_POST["mdp"];
 
-    $stmt = $pdo->prepare("SELECT * FROM users WHERE email = ?");
+    $stmt = $pdo->prepare("SELECT * FROM users WHERE pseudo = ?");
     $stmt->execute([$pseudo]);
     $user = $stmt->fetch();
 
@@ -15,11 +15,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $_SESSION["nom"] = $user["nom"];
         $_SESSION["role"] = $user["role"];
         $_SESSION["loggedin"] = TRUE;
-        header("Location: ../index.php");
+        if ($user['role'] === 'admin') {
+            header("Location: /php/admin.php");
+        } else {
+            header("Location: /index.php");
+        }
         exit;
     } else {
         echo "Mot de passe incorrect";
     }
+
 }
 ?>
 
