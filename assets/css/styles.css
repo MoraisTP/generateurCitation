@@ -307,6 +307,31 @@ input[type="password"] {
     margin-top: 20px;
 }
 
+.fav-item {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(222, 158, 227, 0.5);
+    backdrop-filter: blur(15px);
+    text-align: left;
+    padding: 30px;
+    max-width: 80%;
+    color: white;
+}
+
+.fav-item ul {
+    margin-top: 10px;
+    text-decoration: none;
+    list-style: none;
+    background-color: rgba(57, 24, 59, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.fav-item button {
+    padding: 10px;
+    margin: 10px;
+}
 
 
 /* Styles pour le menu burger */

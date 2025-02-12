@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1bdf616-e97f-4d53-8509-f50bf563aec2" name="Changes" comment="fix : J'ai finalement réussi a ajouter des favoris, il me manque la possibilité de les supprimer. J'ai du utiliser chatgpt pour debug, je n'ai pas réussi a trouver l'erreur.. Correction du fichier random, config et changement de nom pour la feat &quot;favoris&quot; qui s'appelle désormais &quot;favorisDta&quot;">
-      <change afterPath="$PROJECT_DIR$/php/suppFavori.php" afterDir="false" />
+    <list default="true" id="a1bdf616-e97f-4d53-8509-f50bf563aec2" name="Changes" comment="feat : Ajout de la feat 'Supprimer des favoris', après avoir cherché pendant des heures, j'ai finalement trouvé mon bonheur ! Prochaine étape : le Front des favoris">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/favoris.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/favoris.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/favoris.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/favoris.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +110,7 @@
       <workItem from="1739279725308" duration="572000" />
       <workItem from="1739280513123" duration="3237000" />
       <workItem from="1739284947270" duration="1013000" />
-      <workItem from="1739378985657" duration="1705000" />
+      <workItem from="1739378985657" duration="3315000" />
     </task>
     <task id="LOCAL-00001" summary="ADD : Page connexion.html (FRONT) est prête.">
       <option name="closed" value="true" />
@@ -168,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739375896344</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat : Ajout de la feat 'Supprimer des favoris', après avoir cherché pendant des heures, j'ai finalement trouvé mon bonheur ! Prochaine étape : le Front des favoris">
+      <option name="closed" value="true" />
+      <created>1739380930646</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1739380930646</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +189,7 @@
     <MESSAGE value="fix : erreur css après le merge, les button ont était refait" />
     <MESSAGE value="fix : fix erreur s'inscrire (css bouton)" />
     <MESSAGE value="fix : J'ai finalement réussi a ajouter des favoris, il me manque la possibilité de les supprimer. J'ai du utiliser chatgpt pour debug, je n'ai pas réussi a trouver l'erreur.. Correction du fichier random, config et changement de nom pour la feat &quot;favoris&quot; qui s'appelle désormais &quot;favorisDta&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix : J'ai finalement réussi a ajouter des favoris, il me manque la possibilité de les supprimer. J'ai du utiliser chatgpt pour debug, je n'ai pas réussi a trouver l'erreur.. Correction du fichier random, config et changement de nom pour la feat &quot;favoris&quot; qui s'appelle désormais &quot;favorisDta&quot;" />
+    <MESSAGE value="feat : Ajout de la feat 'Supprimer des favoris', après avoir cherché pendant des heures, j'ai finalement trouvé mon bonheur ! Prochaine étape : le Front des favoris" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : Ajout de la feat 'Supprimer des favoris', après avoir cherché pendant des heures, j'ai finalement trouvé mon bonheur ! Prochaine étape : le Front des favoris" />
   </component>
 </project>

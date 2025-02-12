@@ -20,8 +20,19 @@
 <?php
 include "./header.php"
 ?>
+<video autoplay muted loop id="myVideo" style="
+ position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+z-index: -99;">
+    <source src="/assets/vid/bg.mp4" type="video/mp4">
+</video>
+<section class="fav-item">
 <h2>Mes citations favorites</h2>
 <ul id="favoris-list"></ul>
+</section>
 <script src="/assets/js/random.js"></script>
 <script src="/assets/js/favoris.js"></script>
 </body>
