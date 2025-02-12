@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a1bdf616-e97f-4d53-8509-f50bf563aec2" name="Changes" comment="feat : ajout de la feature inscription, il est maitenant possible de s'inscrire sur le site.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/deconnecter.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +24,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/connexion" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -66,7 +69,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "inscription",
+    "git-widget-placeholder": "develops",
     "last_opened_file_path": "C:/Users/morai/Documents/1 NFS/Théo Dieppois/ChatBot",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -81,6 +84,7 @@
   <component name="Push.Settings">
     <force-push-targets>
       <force-push-target remote-path="origin" branch="inscription" />
+      <force-push-target remote-path="origin" branch="develops" />
     </force-push-targets>
   </component>
   <component name="SharedIndexes">
