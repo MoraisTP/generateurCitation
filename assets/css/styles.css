@@ -1,10 +1,16 @@
-* {
+html {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
 .bodyInscription {
     margin-top: 50px;
@@ -17,6 +23,106 @@
     color: #fff;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #000000;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+}
+
+.logo p {
+    font-size: 25px;
+}
+header .logo img {
+    vertical-align: middle;
+    max-height: 50px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #5200A9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-links .inscrire {
+    padding: 10px;
+    background-color: #3A1760;
+    border-radius: 5px;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+.content h1, p {
+    color: white;
+}
+#citation {color: #fff}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #7c0000;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+.bg-index {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+#citation {
+    margin-top: 20px;
+    font-size: 20px;
+    font-style: italic;
+}
+/* Partie develops */
 .container {
     width: 90%;
     height: 90vh;
@@ -164,7 +270,48 @@ input[type="password"] {
 
 
 
+
+/* Styles pour le menu burger */
 @media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        background-color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+        padding-top: 60px;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    /* Animation du burger en croix */
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
     .container {
         flex-direction: column;
         height: auto;
