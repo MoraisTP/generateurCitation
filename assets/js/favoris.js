@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async function () {
-    let response = await fetch("../php/api_favoris.php");
+    let response = await fetch("/php/apiFavori.php");
     let favoris = await response.json();
 
     let list = document.getElementById("favoris-list");

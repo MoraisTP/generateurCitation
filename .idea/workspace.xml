@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1bdf616-e97f-4d53-8509-f50bf563aec2" name="Changes" comment="fix : erreur css après le merge, les button ont était refait">
+    <list default="true" id="a1bdf616-e97f-4d53-8509-f50bf563aec2" name="Changes" comment="fix : fix erreur s'inscrire (css bouton)">
+      <change afterPath="$PROJECT_DIR$/html/favoris.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/favorisData.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/sInscrire.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/sInscrire.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/favoris.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/favoris.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/random.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/random.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/apiFavori.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/apiFavori.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/favoris.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/favoris.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -31,7 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="header" />
+        <entry key="$PROJECT_DIR$" value="develops" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,7 +76,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "develops",
+    "git-widget-placeholder": "favoris",
     "last_opened_file_path": "C:/Users/morai/Documents/1 NFS/Théo Dieppois/ChatBot",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -149,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739361311648</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix : fix erreur s'inscrire (css bouton)">
+      <option name="closed" value="true" />
+      <created>1739372375647</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739372375647</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +175,7 @@
     <MESSAGE value="feat : ajout de la feature inscription, il est maitenant possible de s'inscrire sur le site." />
     <MESSAGE value="del : j'ai supprimer un fichier vide" />
     <MESSAGE value="fix : erreur css après le merge, les button ont était refait" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix : erreur css après le merge, les button ont était refait" />
+    <MESSAGE value="fix : fix erreur s'inscrire (css bouton)" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix : fix erreur s'inscrire (css bouton)" />
   </component>
 </project>

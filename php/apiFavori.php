@@ -10,7 +10,7 @@ if (!isset($_SESSION['user_id'])) {
 
 $user_id = $_SESSION['user_id'];
 $stmt = $pdo->prepare("SELECT c.id, c.texte, c.auteur FROM favoris f 
-                      JOIN citations c ON f.citation_id = c.id
+                      JOIN citations c ON f.citations_id = c.id
                       WHERE f.user_id = ?");
 $stmt->execute([$user_id]);
 $favoris = $stmt->fetchAll(PDO::FETCH_ASSOC);
