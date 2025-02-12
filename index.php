@@ -18,23 +18,9 @@
 </head>
 
 <body>
-<header>
-    <div class="logo">
-        <img src="./assets/img/logo.png" alt="">
-        <p>INABETON</p>
-    </div>
-    <nav>
-        <ul class="nav-links">
-            <li><a href="./php/connexion.php">SE CONNECTER</a></li>
-            <li><a class="inscrire" href="./php/sInscrire.php">S' INSCRIRE</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
-</header>
+<?php
+include "./php/header.php"
+?>
 <img class="bg-index" src="./assets/img/raidenbgindex.png" alt="Raiden Shogun">
 <main>
     <div class="content">
