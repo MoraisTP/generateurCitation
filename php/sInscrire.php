@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     try {
         $stmt = $pdo->prepare("INSERT INTO users (nom, prenom, email, password, pseudo) VALUES (?, ?, ?, ?, ?)");
         $stmt->execute([$nom, $prenom, $email, $hashed_password, $pseudo]);
-        echo "<p style='position: absolute; padding: 20px; border-radius: 20px; border: 5px solid black; top: 20%; right: 30%; z-index: 10; color: black; background-color: white;'>Vous êtes inscrits ! (normalement) <a href='connection.php'>Se connecter</a></p>";
+        echo "<p style='position: absolute; padding: 20px; border-radius: 20px; border: 5px solid black; top: 20%; right: 30%; z-index: 10; color: black; background-color: white;'>Vous êtes inscrits ! (normalement) <a href='/php/connexion.php'>Se connecter</a></p>";
     } catch (PDOException $e) {
         echo "Merde : " . $e->getMessage();
     }
@@ -86,7 +86,7 @@ include "./header.php"
                     <label for="mdpVerif">Vérifier le mot de passe :</label>
                     <input type="password" id="mdpVerif" name="mdpVerif" required>
                 </div>
-                <button type="submit" id="popup" onclick="popup()"> S'inscrire</button>
+                <button type="submit" class="seConnecter" id="popup" onclick="popup()"> S'inscrire</button>
             </form>
 
             <div class="login-options">
