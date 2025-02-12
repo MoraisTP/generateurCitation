@@ -114,6 +114,16 @@ main {
     border: none;
     border-radius: 5px;
     margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+#favori-btn:hover {
+    background-color: #5200A9;
+    color: white;
+}
+#generer-btn:hover {
+    background-color: #5200A9;
+    color: white;
 }
 
 button:hover {

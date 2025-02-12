@@ -26,11 +26,11 @@ include "./php/header.php"
     <div class="content">
         <h1>Manque d'inspiration ?</h1>
         <p>Trouvez votre bonheur en générant aléatoirement une citation</p>
-        <button id="generer-btn">GÉNÉRER</button>
+        <button style="cursor: pointer;" id="generer-btn">GÉNÉRER 🔃</button>
         <div id="citation"></div>
     </div>
     <button id="favori-btn" data-citation-id="">💜 Ajouter aux favoris</button>
-
+    <a href="/assets/js/jeu.js"><button style="border-radius: 100%; position: absolute; bottom: 10%; font-size: 40px; padding: 10px; cursor: pointer;">❓</button></a>
 </main>
 
 <script src="./assets/js/random.js"></script>

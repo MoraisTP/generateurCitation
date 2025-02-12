@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1bdf616-e97f-4d53-8509-f50bf563aec2" name="Changes" comment="fix : erreur css après le merge, les button ont était refait">
-      <change afterPath="$PROJECT_DIR$/php/adminAjout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/connexion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/suppCitation.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/suppCitation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +69,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "admin",
+    "git-widget-placeholder": "develops",
     "last_opened_file_path": "C:/Users/morai/Documents/1 NFS/Théo Dieppois/ChatBot",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
