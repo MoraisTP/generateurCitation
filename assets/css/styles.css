@@ -97,13 +97,16 @@ header .logo img {
 main {
     text-align: center;
     padding: 50px 20px;
+    margin: 10px;
 }
 .content h1, p {
     color: white;
+    font-size: 50px;
+    margin: 20px;
 }
 #citation {color: #fff}
 
-button {
+#favori-btn , #generer-btn {
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
@@ -111,6 +114,7 @@ button {
     color: #7c0000;
     border: none;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 button:hover {
@@ -203,7 +207,7 @@ button:hover {
     border-radius: 5px;
 }
 
-button {
+.input-box button {
     width: 100%;
     padding: 10px;
     background-color: #935097;
@@ -214,7 +218,7 @@ button {
     transition: background-color 0.5s;
 }
 
-button:hover {
+.input-box button:hover {
     background-color: #903095;
 }
 

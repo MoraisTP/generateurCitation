@@ -25,8 +25,8 @@
     </div>
     <nav>
         <ul class="nav-links">
-            <li><a href="connexion.php">SE CONNECTER</a></li>
-            <li><a class="inscrire" href="sInscrire.php">S' INSCRIRE</a></li>
+            <li><a href="./php/connexion.php">SE CONNECTER</a></li>
+            <li><a class="inscrire" href="./php/sInscrire.php">S' INSCRIRE</a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
