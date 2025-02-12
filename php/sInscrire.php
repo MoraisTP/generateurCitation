@@ -1,4 +1,30 @@
+<?php
+session_start();
+require 'config.php';
 
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $pseudo = trim($_POST["pseudo"]);
+    $nom = trim($_POST["nom"]);
+    $prenom = trim($_POST["prenom"]);
+    $email = trim($_POST["email"]);
+    $password = $_POST["mdp"];
+    $password_confirm = $_POST["mdpVerif"];
+
+    if ($password !== $password_confirm) {
+        die("Mot de passe ne correspond pas !");
+    }
+
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+    try {
+        $stmt = $pdo->prepare("INSERT INTO users (nom, prenom, email, password, pseudo) VALUES (?, ?, ?, ?, ?)");
+        $stmt->execute([$nom, $prenom, $email, $hashed_password, $pseudo]);
+        echo "<p style='position: absolute; padding: 20px; border-radius: 20px; border: 5px solid black; top: 20%; right: 30%; z-index: 10; color: black; background-color: white;'>Vous êtes inscrits ! (normalement) <a href='connection.php'>Se connecter</a></p>";
+    } catch (PDOException $e) {
+        echo "Merde : " . $e->getMessage();
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -17,7 +43,11 @@
     <link href="../assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
     <link href="../assets/css/styles.css" rel="stylesheet"/>
 </head>
-<body class="bodyInscription">
+<body>
+<?php
+include "./header.php"
+?>
+<section class="bodyInscription">
 <div class="container">
     <div class="gauche">
         <div class="bienvenue">
@@ -60,37 +90,11 @@
             </form>
 
             <div class="login-options">
-                <a href="/signup">Vous avez déjà un compte ? Connectez-vous.</a>
+                <a href="/php/connexion.php">Vous avez déjà un compte ? Connectez-vous.</a>
             </div>
 
         </div>
     </div>
 </div>
-<?php
-session_start();
-require 'config.php';
-
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $pseudo = trim($_POST["pseudo"]);
-    $nom = trim($_POST["nom"]);
-    $prenom = trim($_POST["prenom"]);
-    $email = trim($_POST["email"]);
-    $password = $_POST["mdp"];
-    $password_confirm = $_POST["mdpVerif"];
-
-    if ($password !== $password_confirm) {
-        die("Mot de passe ne correspond pas !");
-    }
-
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
-    try {
-        $stmt = $pdo->prepare("INSERT INTO users (nom, prenom, email, password, pseudo) VALUES (?, ?, ?, ?, ?)");
-        $stmt->execute([$nom, $prenom, $email, $hashed_password, $pseudo]);
-        echo "<p style='position: absolute; padding: 20px; border-radius: 20px; border: 5px solid black; top: 20%; right: 30%; z-index: 10; color: black; background-color: white;'>Vous êtes inscrits ! (normalement) <a href='connection.php'>Se connecter</a></p>";
-    } catch (PDOException $e) {
-        echo "Merde : " . $e->getMessage();
-    }
-}
-?>
+</section>
 </body>

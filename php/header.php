@@ -1,16 +1,18 @@
 <?php
-session_start();
-if (isset($_SESSION["loggedin"]) && ($_SESSION["loggedin"] == TRUE)) {
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();}
+if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === TRUE) {
+    // Utilisateur connecté
     ?>
     <header>
         <div class='logo'>
-            <img src='./assets/img/logo.png' alt=''>
+            <img src='/assets/img/logo.png' alt=''>
             <p>INABETON</p>
         </div>
         <nav>
             <ul class='nav-links'>
-                <li><a href="../php/connexion.php">SE CONNECTER</a></li>
-                <li><a class='inscrire' href='./php/sInscrire.php'>S' INSCRIRE</a></li>
+                <li><a href="/php/favoris.php" style="background-color: transparent;"><img src="/assets/img/userIcon.png" style="width: 70px;" alt="chepo"></a></li>
+                <li><a href="/php/deconnexion.php">SE DÉCONNECTER</a></li>
             </ul>
             <div class='burger'>
                 <div class='line1'></div>
@@ -21,19 +23,17 @@ if (isset($_SESSION["loggedin"]) && ($_SESSION["loggedin"] == TRUE)) {
     </header>
     <?php
 } else {
-    //write another nav menu html code here
+    // Utilisateur non connecté
     ?>
-
-
     <header>
         <div class='logo'>
-            <img src='../assets/img/logo.png' alt=''>
+            <img src='/assets/img/logo.png' alt=''>
             <p>INABETON</p>
         </div>
         <nav>
             <ul class='nav-links'>
-                <li><a href='./connexion.php'>SE CONNECTER</a></li>
-                <li><a class='inscrire' href='./sInscrire.php'>S' INSCRIRE</a></li>
+                <li><a href='/php/connexion.php'>SE CONNECTER</a></li>
+                <li><a class='inscrire' href='/php/sInscrire.php'>S' INSCRIRE</a></li>
             </ul>
             <div class='burger'>
                 <div class='line1'></div>

@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $_SESSION["user_id"] = $user["id"];
         $_SESSION["nom"] = $user["nom"];
         $_SESSION["role"] = $user["role"];
+        $_SESSION["loggedin"] = TRUE;
         header("Location: ../index.php");
         exit;
     } else {
@@ -40,7 +41,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <link href="../assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
     <link href="../assets/css/styles.css" rel="stylesheet"/>
 </head>
-<body class="bodyConnexion">
+<body>
+<?php
+include "./header.php"
+?>
+<section class="bodyConnexion">
+
 <div class="container">
     <div class="gauche">
         <div class="bienvenue">
@@ -62,19 +68,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <label for="mdp">Mot de passe :</label>
                     <input type="password" id="mdp" name="mdp" required>
                 </div>
-                <button type="submit">Se connecter</button>
+                <button class="seConnecter" type="submit">Se connecter</button>
             </form>
 
             <!-- Forgot password and sign up links -->
             <div class="login-options">
                 <a href="">Mot de passe oublié ?</a>
-                <a href="/signup">Pas de compte ? Créez ICI !</a>
+                <a href="/php/sInscrire.php">Pas de compte ? Créez ICI !</a>
             </div>
 
         </div>
     </div>
 </div>
-
+</section>
 <!-- Font Awesome CDN Script -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 </body>
