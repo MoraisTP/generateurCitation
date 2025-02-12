@@ -1,33 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--    Metas Données-->
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Hero SOS - Les héros à votre disposition !</title>
+    <meta content="Hero SOS est une application qui permet de recevoir l'aide d'un super héro proche de vous ! Un incident ? Nos super héros sont là !">
+    <meta content="all" name="robots"/>
+    <!--    Meta OG-->
+    <meta content="Hero SOS - Les héros proches de vous !" property="og:title"/>
+    <meta content="Vous avez peur des super vilains ? Nous assi ! Mais c'est fini, aujourd'hui vous pouvez appeler un super héros proche de vous!"
+          property="og:description"/>
+    <meta content="https://gitlab.com/HazarAZLAG/web-4-heroes" property="og:url"/>
+    <!--Feuilles de style-->
+    <link href="../assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="../assets/css/styles.css" rel="stylesheet"/>
+</head>
+<body>
 <?php
-header("Content-Type: application/json");
-session_start();
-require "config.php";
-
-if (!isset($_SESSION['user_id'])) {
-    echo json_encode(["status" => "error", "message" => "Non connecté"]);
-    exit();
-}
-
-$user_id = $_SESSION['user_id'];
-$data = json_decode(file_get_contents("php://input"), true);
-$citation_id = $data['citation_id'] ?? null;
-
-if (!$citation_id) {
-    echo json_encode(["status" => "error", "message" => "ID citation manquant"]);
-    exit();
-}
-
-$stmt = $pdo->prepare("SELECT COUNT(*) FROM favoris WHERE user_id = ? AND citation_id = ?");
-$stmt->execute([$user_id, $citation_id]);
-$existe = $stmt->fetchColumn();
-
-if ($existe) {
-    $stmt = $pdo->prepare("DELETE FROM favoris WHERE user_id = ? AND citation_id = ?");
-    $stmt->execute([$user_id, $citation_id]);
-    echo json_encode(["status" => "removed"]);
-} else {
-    $stmt = $pdo->prepare("INSERT INTO favoris (user_id, citation_id) VALUES (?, ?)");
-    $stmt->execute([$user_id, $citation_id]);
-    echo json_encode(["status" => "added"]);
-}
+include "./header.php"
 ?>
+<video autoplay muted loop id="myVideo" style="
+ position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+z-index: -99;">
+    <source src="/assets/vid/bg.mp4" type="video/mp4">
+</video>
+<section class="fav-item">
+<h2>Mes citations favorites</h2>
+<ul id="favoris-list"></ul>
+</section>
+<script src="/assets/js/random.js"></script>
+<script src="/assets/js/favoris.js"></script>
+</body>
+</html>

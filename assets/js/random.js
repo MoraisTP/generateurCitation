@@ -34,6 +34,9 @@ document.addEventListener("DOMContentLoaded", function() {
         let citationAuthor = data.auteur ? `— ${data.auteur}` : "";
 
         document.getElementById("citation").innerHTML = `${citationText} <br> <strong>${citationAuthor}</strong>`;
+        let favoriBtn = document.getElementById("favori-btn");
+        favoriBtn.setAttribute("data-citation-id", data.id);
+        favoriBtn.innerHTML = "💜 Ajouter aux favoris";
     });
 });
 
@@ -42,17 +45,26 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("favori-btn").addEventListener("click", async function () {
     let citationId = this.getAttribute("data-citation-id");
 
-    let response = await fetch("../php/favoris.php", {
-        method: "POST",
-        body: JSON.stringify({ citation_id: citationId }),
-        headers: { "Content-Type": "application/json" }
-    });
+    try {
+        let response = await fetch("php/favorisData.php", {
+            method: "POST",
+            body: JSON.stringify({ citations_id: citationId }),
+            headers: { "Content-Type": "application/json" }
+        });
 
-    let result = await response.json();
+        if (!response.ok) {
+            throw new Error("Erreur lors de l'ajout aux favoris");
+        }
 
-    if (result.status === "added") {
-        this.innerHTML = "💔 Retirer des favoris";
-    } else if (result.status === "removed") {
-        this.innerHTML = "💜 Ajouter aux favoris";
+        let result = await response.json();
+
+        if (result.status === "added") {
+            this.innerHTML = "💔 Retirer des favoris";
+        } else if (result.status === "removed") {
+            this.innerHTML = "💜 Ajouter aux favoris";
+        }
+    } catch (error) {
+        console.error("Erreur :", error);
     }
 });
+
