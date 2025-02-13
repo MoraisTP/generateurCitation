@@ -26,7 +26,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === TRUE) {
     ?>
     <header>
         <div class='logo'>
-            <img src='/assets/img/logo.png' alt=''>
+            <a href="/index.php"><img src='/assets/img/logo.png' alt=''></a>
             <p>INABETON</p>
         </div>
         <nav>

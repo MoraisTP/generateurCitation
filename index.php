@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (isset($_SESSION['message'])) {
+echo '<script>alert("' . htmlspecialchars($_SESSION['message']) . '");</script>';
+unset($_SESSION['message']);
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -30,7 +37,7 @@ include "./php/header.php"
         <div id="citation"></div>
     </div>
     <button id="favori-btn" data-citation-id="">💜 Ajouter aux favoris</button>
-    <a href="/assets/js/jeu.js"><button style="border-radius: 100%; position: absolute; bottom: 10%; font-size: 40px; padding: 10px; cursor: pointer;">❓</button></a>
+    <a href="/html/pendu.html"><button style="border-radius: 100%; position: absolute; bottom: 10%; font-size: 40px; padding: 10px; cursor: pointer;">❓</button></a>
 </main>
 
 <script src="./assets/js/random.js"></script>

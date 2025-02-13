@@ -15,8 +15,7 @@ $est_favori = $stmt->fetchColumn();
 if ($est_favori == 0) {
     $stmt = $pdo->prepare("DELETE FROM citations WHERE id = ?");
     $stmt->execute([$citation_id]);
-    echo "<script>alert('Supprimer avec succèes');</script>";
 }
 
-header("Refresh: 3 ; Location: admin.php");
+header("Location: admin.php");
 ?>

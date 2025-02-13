@@ -18,6 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if ($user['role'] === 'admin') {
             header("Location: /php/admin.php");
         } else {
+            setcookie("username", $user["nom"], time() + 3600);
+            $_SESSION['message'] = "Vous êtes connecté avec : " . $user["nom"];
             header("Location: /index.php");
         }
         exit;
