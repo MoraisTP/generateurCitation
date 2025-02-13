@@ -45,8 +45,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
           property="og:description"/>
     <meta content="https://gitlab.com/HazarAZLAG/web-4-heroes" property="og:url"/>
     <!--Feuilles de style-->
-    <link href="../assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
-    <link href="../assets/css/styles.css" rel="stylesheet"/>
+    <link href="/assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="/assets/css/styles.css" rel="stylesheet"/>
 </head>
 <body>
 <?php

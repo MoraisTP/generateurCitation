@@ -14,8 +14,8 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-</head>
+    <link href="/assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="/assets/css/styles.css" rel="stylesheet"/></head>
 <body>
 <?php
 include "./header.php"

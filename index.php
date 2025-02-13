@@ -12,7 +12,7 @@ unset($_SESSION['message']);
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Hero SOS - Les héros à votre disposition !</title>
-    <meta content="Hero SOS est une application qui permet de recevoir l'aide d'un super héro proche de vous ! Un incident ? Nos super héros sont là !">
+    <meta content="Un site fun qui permet de générer des citations et de les ajouter en favoris !">
     <meta content="all" name="robots"/>
     <!--    Meta OG-->
     <meta content="Hero SOS - Les héros proches de vous !" property="og:title"/>
@@ -20,8 +20,8 @@ unset($_SESSION['message']);
           property="og:description"/>
     <meta content="https://gitlab.com/HazarAZLAG/web-4-heroes" property="og:url"/>
     <!--Feuilles de style-->
-    <link href="../assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
-    <link href="./assets/css/styles.css" rel="stylesheet"/>
+    <link href="/assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="/assets/css/styles.css" rel="stylesheet"/>
 </head>
 
 <body>
