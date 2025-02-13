@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1bdf616-e97f-4d53-8509-f50bf563aec2" name="Changes" comment="fix : bouton css (generer)">
-      <change afterPath="$PROJECT_DIR$/assets/css/pendu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/pendu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/penduListe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/pendu.html" afterDir="false" />
+    <list default="true" id="a1bdf616-e97f-4d53-8509-f50bf563aec2" name="Changes" comment="feat : ajout d'une fonc copier citation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/favoris.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/favoris.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/pendu.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/pendu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/penduListe.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/penduListe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/random.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/random.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/suppCitation.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/suppCitation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +32,12 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/favoris" />
+    <option name="BRANCH" value="origin/jeu" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develops" />
+        <entry key="$PROJECT_DIR$" value="jeu" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,7 +75,7 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;jeu&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develops&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/morai/Documents/1 NFS/Théo Dieppois/ChatBot&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -116,6 +116,7 @@
       <workItem from="1739284947270" duration="1013000" />
       <workItem from="1739388240978" duration="5358000" />
       <workItem from="1739432245762" duration="9835000" />
+      <workItem from="1739467643429" duration="10900000" />
     </task>
     <task id="LOCAL-00001" summary="ADD : Page connexion.html (FRONT) est prête.">
       <option name="closed" value="true" />
@@ -173,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739395090292</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat : ajout d'une fonc copier citation">
+      <option name="closed" value="true" />
+      <created>1739455708509</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1739455708509</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +195,7 @@
     <MESSAGE value="feat : Ajout du CSS sur la page favoris" />
     <MESSAGE value="fix : erreur css après le merge, les button ont était refait" />
     <MESSAGE value="fix : bouton css (generer)" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix : bouton css (generer)" />
+    <MESSAGE value="feat : ajout d'une fonc copier citation" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : ajout d'une fonc copier citation" />
   </component>
 </project>

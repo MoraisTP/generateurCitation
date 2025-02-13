@@ -1,3 +1,4 @@
+// Permet de gérer les favoris (user) en utilisant du php + js, on reçois les données en json puis on fait un foreach pour créer un li sur chaque citation. Chaque élément contient un texte, l'auteur et un bouton pour del
 document.addEventListener("DOMContentLoaded", async function () {
     let response = await fetch("/php/apiFavori.php");
     let favoris = await response.json();

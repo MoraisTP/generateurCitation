@@ -1,4 +1,5 @@
 <?php
+//Message des cookies
 session_start();
 if (isset($_SESSION['message'])) {
 echo '<script>alert("' . htmlspecialchars($_SESSION['message']) . '");</script>';

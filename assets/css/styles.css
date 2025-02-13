@@ -130,9 +130,11 @@ button:hover {
     background-color: #555;
 }
 .bg-index {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
+    position: fixed;
+    background-position: center;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    background-repeat: repeat;
     top: 0;
     left: 0;
     z-index: -1;
@@ -395,22 +397,54 @@ background-color: rgba(222, 158, 227, 0.5);
     font-weight: 800;
 }
 
+.supprimerAdmin ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    vertical-align: bottom;
+}
+
+.supprimerAdmin ul li button {
+    display: block!important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+}
+
+
+.supprimerAdmin ul li {
+    max-width: 250px;
+    min-height: 200px;
+    margin: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    padding: 10px;
+}
+
 
 /* Styles pour le menu burger */
 @media (max-width: 768px) {
     .nav-links {
         position: fixed;
-        right: 0;
+        left: 0;
         top: 0;
         height: 100vh;
         background-color: #333;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 100%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in-out;
         padding-top: 60px;
+        z-index: 10;
+    }
+
+    .burger div {
+        z-index: 99;
     }
 
     .nav-links li {
