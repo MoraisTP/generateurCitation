@@ -36,7 +36,9 @@ include "./php/header.php"
         <button style="cursor: pointer;" id="generer-btn">GÉNÉRER 🔃</button>
         <div id="citation"></div>
     </div>
+    <button id="citationInput" onclick="copierCittion()" style="padding: 5px; font-size: 30px; border-radius: 5px; vertical-align: middle">📋</button>
     <button id="favori-btn" data-citation-id="">💜 Ajouter aux favoris</button>
+
     <a href="/html/pendu.html"><button style="border-radius: 100%; position: absolute; bottom: 10%; font-size: 40px; padding: 10px; cursor: pointer;">❓</button></a>
 </main>
 

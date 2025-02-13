@@ -53,7 +53,7 @@ document.getElementById("favori-btn").addEventListener("click", async function (
         });
 
         if (!response.ok) {
-            throw new Error("Erreur lors de l'ajout aux favoris");
+            throw new Error("Erreur fav");
         }
 
         let result = await response.json();
@@ -67,4 +67,14 @@ document.getElementById("favori-btn").addEventListener("click", async function (
         console.error("Erreur :", error);
     }
 });
+function copierCittion() {
+    let citationTexte = document.getElementById("citation").innerText;
+
+    if (citationTexte.trim() === "") {
+        alert("Y a pas de citation à copier frr !");
+        return;
+    }
+    navigator.clipboard.writeText(citationTexte)
+        .then(() => alert("Texte copié : " + citationTexte))
+}
 
