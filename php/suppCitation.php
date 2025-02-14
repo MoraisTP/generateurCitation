@@ -17,5 +17,6 @@ if ($est_favori == 0) {
     $stmt->execute([$citation_id]);
 }
 
-header("Location: admin.php");
+echo '<script>alert("Citation supprimé !");</script>';
+header("Refresh:1 /php/admin.php");
 ?>

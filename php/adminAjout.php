@@ -11,6 +11,6 @@ $auteur = $_POST['auteur'];
 
 $stmt = $pdo->prepare("INSERT INTO citations (texte, auteur) VALUES (?, ?)");
 $stmt->execute([$texte, $auteur]);
-
-header("Location: admin.php");
+echo '<script>alert("Citation enregistré !");</script>';
+header("Refresh:1 /php/admin.php");
 ?>
