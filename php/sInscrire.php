@@ -31,12 +31,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <!--    Metas Données-->
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Le générateur de citations ultime !</title>
-    <meta content="Hero SOS est une application qui permet de recevoir l'aide d'un super héro proche de vous ! Un incident ? Nos super héros sont là !">
+    <title>Générateur de citations !</title>
+    <meta content="Un site fun qui permet de générer des citations et de les ajouter en favoris !">
     <meta content="all" name="robots"/>
     <!--    Meta OG-->
-    <meta content="Hero SOS - Les héros proches de vous !" property="og:title"/>
-    <meta content="Vous avez peur des super vilains ? Nous assi ! Mais c'est fini, aujourd'hui vous pouvez appeler un super héros proche de vous!"
+    <meta content="Inabeton - Générer des citation aléatoires !" property="og:title"/>
+    <meta content="Vous allez postez des messages inspirantes mais vous n'avez pas d'inspi ? Béton est là por vous !"
           property="og:description"/>
     <meta content="https://gitlab.com/HazarAZLAG/web-4-heroes" property="og:url"/>
     <!--Feuilles de style-->

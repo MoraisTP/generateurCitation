@@ -9,13 +9,21 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
 <!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <!--    Metas Données-->
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Générateur de citations !</title>
+    <meta content="Un site fun qui permet de générer des citations et de les ajouter en favoris !">
+    <meta content="all" name="robots"/>
+    <!--    Meta OG-->
+    <meta content="Inabeton - Générer des citation aléatoires !" property="og:title"/>
+    <meta content="Vous allez postez des messages inspirantes mais vous n'avez pas d'inspi ? Béton est là por vous !"
+          property="og:description"/>
+    <meta content="https://gitlab.com/HazarAZLAG/web-4-heroes" property="og:url"/>
+    <!--Feuilles de style-->
     <link href="/assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
-    <link href="/assets/css/styles.css" rel="stylesheet"/></head>
+    <link href="/assets/css/styles.css" rel="stylesheet"/>
+</head>
 <body>
 <?php
 include "./header.php"

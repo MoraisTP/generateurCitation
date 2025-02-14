@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1bdf616-e97f-4d53-8509-f50bf563aec2" name="Changes" comment="fix : xml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/favoris.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/favoris.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/connexion.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/favoris.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inscription.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/connexion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/profilUtilisateur.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/sInscrire.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/sInscrire.php" afterDir="false" />
-    </list>
+    <list default="true" id="a1bdf616-e97f-4d53-8509-f50bf563aec2" name="Changes" comment="fix : responsive" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739520065751</updated>
-      <workItem from="1739520068084" duration="3681000" />
+      <workItem from="1739520068084" duration="3789000" />
     </task>
     <task id="LOCAL-00001" summary="fix : xml">
       <option name="closed" value="true" />
@@ -98,7 +86,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739520367675</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix : responsive">
+      <option name="closed" value="true" />
+      <created>1739527855794</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739527855794</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +102,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix : xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix : xml" />
+    <MESSAGE value="fix : responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix : responsive" />
   </component>
 </project>
