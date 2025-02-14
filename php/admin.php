@@ -60,6 +60,6 @@ z-index: -99;">
         <?php endforeach; ?>
     </ul>
 </section>
-
+<script src="/assets/js/random.js"></script>
 </body>
 </html>

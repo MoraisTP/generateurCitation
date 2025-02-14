@@ -428,6 +428,17 @@ background-color: rgba(222, 158, 227, 0.5);
 
 /* Styles pour le menu burger */
 @media (max-width: 768px) {
+    .content h1, p {
+        color: white;
+        font-size: 5vh;
+        margin: 20px;
+    }
+
+    .btnPendu {
+        position: absolute;
+        left: 0;
+    }
+
     .nav-links {
         position: fixed;
         left: 0;

@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             let result = await response.json();
 
             if (result.success) {
-                this.parentElement.remove(); // Supprime l'élément de la liste visuellement
+                this.parentElement.remove();
             } else {
                 alert("Erreur lors de la suppression");
             }

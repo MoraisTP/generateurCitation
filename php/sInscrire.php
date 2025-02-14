@@ -99,4 +99,5 @@ include "./header.php"
     </div>
 </div>
 </section>
+<script src="/assets/js/random.js"></script>
 </body>

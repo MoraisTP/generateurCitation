@@ -52,6 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <?php
 include "./header.php"
 ?>
+
 <section class="bodyConnexion">
 <!--Partie gauche-->
 <div class="container">
@@ -90,5 +91,6 @@ include "./header.php"
 </section>
 <!-- Font Awesome CDN Script -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+<script src="/assets/js/random.js"></script>
 </body>
 
