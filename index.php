@@ -29,8 +29,10 @@ unset($_SESSION['message']);
 <?php
 include "./php/header.php"
 ?>
+<!--BG-->
 <img class="bg-index" src="./assets/img/raidenbgindex.png" alt="Raiden Shogun">
 <main>
+<!--    Sec principale-->
     <div class="content">
         <h1>Manque d'inspiration ?</h1>
         <p>Trouvez votre bonheur en générant aléatoirement une citation</p>
@@ -39,7 +41,7 @@ include "./php/header.php"
     </div>
     <button id="citationInput" onclick="copierCittion()" style="padding: 5px; font-size: 30px; border-radius: 5px; vertical-align: middle">📋</button>
     <button id="favori-btn" data-citation-id="">💜 Ajouter aux favoris</button>
-
+<!--Bouton pendu-->
     <a href="/html/pendu.html"><button style="border-radius: 100%; position: absolute; bottom: 10%; font-size: 40px; padding: 10px; cursor: pointer;">❓</button></a>
 </main>
 

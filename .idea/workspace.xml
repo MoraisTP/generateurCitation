@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1bdf616-e97f-4d53-8509-f50bf563aec2" name="Changes" comment="feat : ajout d'une fonc copier citation">
+    <list default="true" id="a1bdf616-e97f-4d53-8509-f50bf563aec2" name="Changes" comment="fix : ajout commentaires sur JS / modifs css minor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/favoris.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/favoris.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/pendu.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/pendu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/penduListe.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/penduListe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/random.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/random.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/connexion.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +114,9 @@
       <workItem from="1739284947270" duration="1013000" />
       <workItem from="1739388240978" duration="5358000" />
       <workItem from="1739432245762" duration="9835000" />
-      <workItem from="1739467643429" duration="10900000" />
+      <workItem from="1739467643429" duration="11594000" />
+      <workItem from="1739488719298" duration="2013000" />
+      <workItem from="1739519231945" duration="438000" />
     </task>
     <task id="LOCAL-00001" summary="ADD : Page connexion.html (FRONT) est prête.">
       <option name="closed" value="true" />
@@ -182,7 +182,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739455708509</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix : ajout commentaires sur JS / modifs css minor">
+      <option name="closed" value="true" />
+      <created>1739482290538</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1739482290538</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix : ajout commentaires sur JS / modifs css minor">
+      <option name="closed" value="true" />
+      <created>1739482777280</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1739482777280</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +212,7 @@
     <MESSAGE value="fix : erreur css après le merge, les button ont était refait" />
     <MESSAGE value="fix : bouton css (generer)" />
     <MESSAGE value="feat : ajout d'une fonc copier citation" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : ajout d'une fonc copier citation" />
+    <MESSAGE value="fix : ajout commentaires sur JS / modifs css minor" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix : ajout commentaires sur JS / modifs css minor" />
   </component>
 </project>

@@ -20,6 +20,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
 <?php
 include "./header.php"
 ?>
+<!--BG-->
 <video autoplay muted loop id="myVideo" style="
  position: fixed;
   right: 0;
@@ -30,6 +31,7 @@ z-index: -99;">
     <source src="/assets/vid/bgadmin.mp4" type="video/mp4">
 </video>
 <h1 style="margin: 20px;text-align: center;color: white; font-size: 30px">Panneau d'admin :</h1>
+<!--Panneau d'admin-->
 <section class="ajoutAdmin">
     <h2 style="color: #fff;">Ajouter une citation :</h2>
     <form action="/php/adminAjout.php" method="POST">
@@ -38,6 +40,7 @@ z-index: -99;">
     <button type="submit">Ajouter</button>
 </form>
 </section>
+<!--Sec Supprimer la citation-->
 <section class="supprimerAdmin">
     <h2 style="color: #fff;">Supprimer une citation :</h2>
     <?php

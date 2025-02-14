@@ -392,7 +392,8 @@ background-color: rgba(222, 158, 227, 0.5);
 .supprimerAdmin button {
     padding: 10px;
     margin: 5px;
-    background-color: #7c0000;
+    background-color: rgba(000, 000, 000, 0.1);
+    text-shadow: #420859 1px 4px 3px;
     color: white;
     font-weight: 800;
 }

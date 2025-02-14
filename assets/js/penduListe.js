@@ -4,7 +4,7 @@ const listeMot = [
         indice: "PHP c'est vraiment de la _ _ _ _ _, je te jure ! - Camille"
     },
     {
-        mot: "café",
+        mot: "cafe",
         indice: "Un appareil utilisé par les développeurs"
     },
     {

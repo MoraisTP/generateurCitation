@@ -47,6 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <?php
 include "./header.php"
 ?>
+<!--Sec gauche-->
 <section class="bodyInscription">
 <div class="container">
     <div class="gauche">
@@ -55,6 +56,7 @@ include "./header.php"
             <p>Amusez vous, inspirez vous !</p>
         </div>
     </div>
+<!--    Sec droite -->
     <div class="droite">
         <div class="connexion">
             <div class="connexion-titre">
@@ -88,7 +90,7 @@ include "./header.php"
                 </div>
                 <button type="submit" class="seConnecter" id="popup" onclick="popup()"> S'inscrire</button>
             </form>
-
+<!--Lien connectez vous-->
             <div class="login-options">
                 <a href="/php/connexion.php">Vous avez déjà un compte ? Connectez-vous.</a>
             </div>

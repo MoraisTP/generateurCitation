@@ -20,6 +20,7 @@
 <?php
 include "./header.php"
 ?>
+<!--BG-->
 <video autoplay muted loop id="myVideo" style="
  position: fixed;
   right: 0;
@@ -29,6 +30,7 @@ include "./header.php"
 z-index: -99;">
     <source src="/assets/vid/bg.mp4" type="video/mp4">
 </video>
+<!--Section favoris-->
 <section class="fav-item">
 <h2>Mes citations favorites</h2>
 <ul id="favoris-list"></ul>
