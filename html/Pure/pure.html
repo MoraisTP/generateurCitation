@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!--    Metas Données-->
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Générateur de citations Pure JS !</title>
+    <meta content="Un site fun qui permet de générer des citations et de les ajouter en favoris !">
+    <meta content="all" name="robots"/>
+    <!--    Meta OG-->
+    <meta content="Inabeton - Générer des citation aléatoires !" property="og:title"/>
+    <meta content="Vous allez postez des messages inspirantes mais vous n'avez pas d'inspi ? Béton est là por vous !"
+          property="og:description"/>
+    <meta content="https://gitlab.com/HazarAZLAG/web-4-heroes" property="og:url"/>
+    <!--Feuilles de style-->
+    <link href="/assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="/assets/css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+<main class="heroPureJs">
+    <video autoplay muted loop id="bgraiden" style="
+     position: fixed;
+    background-position: center;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    background-repeat: repeat;
+    top: 0;
+    left: 0;
+    z-index: -1;">
+        <source src="/assets/vid/bgpure.mp4" type="video/mp4">
+    </video>
+    <section class="heroPureJsSection">
+        <h1>Générer des citations</h1>
+        <div id="citation"></div>
+        <button id="btn-citation">Générer</button>
+    </section>
+</main>
+<script src="/assets/js/Pure/pure.js"></script>
+</body>
+</html>

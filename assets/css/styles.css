@@ -425,7 +425,42 @@ background-color: rgba(222, 158, 227, 0.5);
     padding: 10px;
 }
 
+.heroPureJs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
 
+}
+
+.heroPureJsSection {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(222, 158, 227, 0.5);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    min-width: 1200px;
+    min-height: 300px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.heroPureJsSection h1 {
+    margin-top: 50px;
+}
+
+.heroPureJsSection button {
+    min-width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: #acacff;
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 5px;
+}
 /* Styles pour le menu burger */
 @media (max-width: 768px) {
     .content h1, p {
