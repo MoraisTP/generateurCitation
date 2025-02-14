@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le pendu !</title>
+  <link rel="stylesheet" href="/assets/css/pendu.css">
+</head>
+<body id="vantajs">
+<a href="/index.php" class="absolute"  style='position: absolute; padding: 5px; border-radius: 100px; border: 5px solid black; top: 3%; right: 10%;font-size: 50px; z-index: 10; color: black; background-color: white;'>🏠︎</a>
+<div class="game-modal">
+  <div class="content">
+    <img src="#" alt="gif">
+    <h4>Perdu !</h4>
+    <p>Le mot était : <b>rainbow</b></p>
+    <button class="rejouer">Rejouer ?</button>
+  </div>
+</div>
+<div class="container">
+  <div class="penduBox">
+    <img src="/assets/img/hangman-0.svg" draggable="false" alt="Pendu" class="couleurSVG">
+    <h1>Coucou Nathan</h1>
+  </div>
+  <div class="game-box">
+    <ul class="mot"></ul>
+    <h4 class="indice">Indice : <b></b></h4>
+    <h4 class="chances">Il te reste <b></b> chances !</h4>
+    <div class="clavier"></div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.rings.min.js"></script>
+<script>
+  VANTA.RINGS({
+    el: "#vantajs",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    backgroundColor: 0x480b54,
+    color: 0xeffafc
+  })
+</script>
+<script src="/assets/js/penduListe.js"></script>
+<script src="/assets/js/pendu.js"></script>
+</body>
+</html>

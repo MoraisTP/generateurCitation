@@ -1,93 +1,128 @@
-# generateurCitation
+Semaine 7 - Projet “Inabeton” (Générateur de citations en JS + Générater en JS/PHP, en bonus, un petit jeu "Le pendu")
 
 
+1 - Références 
 
-## Getting started
+Durant ce projet, plusieurs ressources en ligne m'ont aidé à comprendre et implémenter certaines fonctionnalités. J'ai suivi des tutoriels, exploré des forums et testé des snippets (codepen) de code trouvés sur divers sites.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+1.1 - Sites utilisés
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+YouTube : Tutoriels en vidéo, notamment CodingNepal (un tuto sur le jeu du pendu en anglais) et AK DEV  (playlist)
 
-## Add your files
+(Plusieurs vidéos comme :
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+https://www.youtube.com/watch?v=X51KOJKrofU (API)
 
-```
-cd existing_repo
-git remote add origin https://gitlab.com/MoraisTP/generateurcitation.git
-git branch -M main
-git push -uf origin main
-```
+https://www.youtube.com/watch?v=5L9UhOnuos0 (SignUP)
 
-## Integrate with your tools
+https://www.youtube.com/watch?v=UTNK9srjGt8&list=PL-h5aNeRKouEIsAFGeS-yhw97mQumSak-&index=14 (Shopping Cart avec BCP de PHP)
 
-- [ ] [Set up project integrations](https://gitlab.com/MoraisTP/generateurcitation/-/settings/integrations)
+https://www.youtube.com/watch?v=Aeo41kddtwY (Admin Panel)
 
-## Collaborate with your team
+CodePen : Inspiration pour la mise en page et certaines animations CSS.
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+Stack Overflow : Le sauveur de ce projet, 90% des erreurs sont fix grâce au forum.
 
-## Test and Deploy
+Tutoriels développement web :
+Créer une API en PHP.
 
-Use the built-in continuous integration in GitLab.
+AdminPanel avec gestion des utilisateurs. (Vidéo)
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+Fonction Clipboard pour copier du texte.
 
-***
+Système de vérification des rôles (Admin/User).
 
-# Editing this README
+Gestion des cookies et sessions. ‘Vidéo)
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+Système de connexion et d'inscription. (Video)
 
-## Suggestions for a good README
+2 - Documentation technique
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+2.1 - PHP
 
-## Name
-Choose a self-explaining name for your project.
+A - admin.php
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+Gère l'interface d'administration du site, permettant de visualiser et de modifier les citations enregistrées. On vérif le role avec un “if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
+die("Tié pas un copaing.");
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+B - adminAjout.php
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+Permet l'ajout de nouvelles citations via l'interface d'administration.
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+C - ajoutCitation.php
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+Script backend permettant d'ajouter une citation à la base de données via un formulaire utilisateur.
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+D - api.php
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+Gère les requêtes API pour obtenir aléatoirement une citation stockée dans la base de données.
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+E - apiFavori.php
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+Retourne les citations favorites d'un utilisateur connecté.
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+F - config.php
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+Fichier de configuration contenant les paramètres de connexion à la base de données.
 
-## License
-For open source projects, say how it is licensed.
+G - connexion.php
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Gère l'authentification des utilisateurs avec une vérification des identifiants.
+
+H - deconnexion.php
+
+Permet à un utilisateur de se déconnecter en supprimant sa session.
+
+I - favoris.php
+
+Gère l'ajout et la suppression des citations favorites pour un utilisateur.
+
+J - favorisData.php
+
+Récupère et affiche les citations favorites d'un utilisateur sous format JSON.
+
+K - header.php
+
+Fichier incluant l'en-tête du site avec la navigation commune à toutes les pages.
+
+L - profilUtilisateur.php
+
+Affiche les informations du profil utilisateur ainsi que ses citations favorites.
+
+M - sInscrire.php
+
+Gère l'inscription des nouveaux utilisateurs avec validation des données.
+
+N - suppCitation.php
+
+Permet à un administrateur de supprimer une citation.
+
+O - suppFavori.php
+
+Permet à un utilisateur de retirer une citation de ses favoris.
+
+P - index.php
+
+Page d'accueil du site affichant une citation aléatoire et les options d'interaction.
+
+2.2 - JS
+
+A - admin
+
+Gère l'interface d'administration pour l'ajout et la suppression des citations.
+
+B - pendu
+
+Implémente un mini-jeu du pendu permettant de deviner des mots. (Merci à CodingNepal)
+
+C - penduListe
+
+Stocke les mots utilisés dans le jeu du pendu. (Merci à CodingNepal)
+
+D - random.js
+
+Gestion du menu burger : permet d'ouvrir et de fermer le menu sur mobile.
+
+Génération des citations : récupère une citation via api.php et l'affiche.
+
+Ajout aux favoris : permet d'ajouter et de retirer une citation des favoris en envoyant une requête à favoris.php.
