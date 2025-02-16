@@ -1,12 +1,12 @@
-Semaine 7 - Projet “Inabeton” (Générateur de citations en JS + Générater en JS/PHP, en bonus, un petit jeu "Le pendu")
+#Semaine 7 - Projet “Inabeton” (Générateur de citations en JS + Générater en JS/PHP, en bonus, un petit jeu "Le pendu")
 ![plot](./assets/img/inabeton.png)
 
 
-1 - Références 
+#1 - Références 
 
 Durant ce projet, plusieurs ressources en ligne m'ont aidé à comprendre et implémenter certaines fonctionnalités. J'ai suivi des tutoriels, exploré des forums et testé des snippets (codepen) de code trouvés sur divers sites.
 
-1.1 - Sites utilisés
+#1.1 - Sites utilisés
 
 YouTube : Tutoriels en vidéo, notamment CodingNepal (un tuto sur le jeu du pendu en anglais) et AK DEV  (playlist)
 
@@ -37,9 +37,9 @@ Gestion des cookies et sessions. ‘Vidéo)
 
 Système de connexion et d'inscription. (Video)
 
-2 - Documentation technique
+#2 - Documentation technique
 
-2.1 - PHP
+#2.1 - PHP
 
 A - admin.php
 
@@ -106,7 +106,7 @@ P - index.php
 
 Page d'accueil du site affichant une citation aléatoire et les options d'interaction.
 
-2.2 - JS
+#2.2 - JS
 
 A - admin
 
