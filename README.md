@@ -1,4 +1,5 @@
 Semaine 7 - Projet “Inabeton” (Générateur de citations en JS + Générater en JS/PHP, en bonus, un petit jeu "Le pendu")
+![plot](./assets/img/inabeton.png)
 
 
 1 - Références 
